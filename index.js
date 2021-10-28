@@ -4,6 +4,7 @@ var bodyParser = require('body-parser')
 const { spawn } = require('child_process');
 var port = process.env.PORT || 3000
 
+app.use(express.static(__dirname + '/public'));
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 app.set("views", "./views");
