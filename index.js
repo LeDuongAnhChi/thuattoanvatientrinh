@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 var bodyParser = require('body-parser')
 const { spawn } = require('child_process');
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 8080
 
 app.use(express.static(__dirname + '/public'));
 // set the view engine to ejs
